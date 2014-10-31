@@ -9,19 +9,41 @@ int y;
 string digix;
 string digiy;
 
-
+/*****
+ *Function:
+ *Description:
+ *Parameters: 
+ *Pre-Conditions:
+ *Post-Conditions:
+ *******/
 void fun1(){
   for( int i = 0; i <= y; i++ ){
     cout << i << ",";
     }//end of for loop
   cout << "" << endl;
 }  //five lines
+
+/*****
+ *Function:
+ *Description:
+ *Parameters: 
+ *Pre-Conditions:
+ *Post-Conditions:
+ *******/
 void fun2(){
   for ( int i = y; i>=0; i--){
     cout << i << ",";
   }//end of for loop
   cout << "" << endl;
 }
+
+/*****
+ *Function:
+ *Description:
+ *Parameters: 
+ *Pre-Conditions:
+ *Post-Conditions:
+ *******/
 void fun3(){
   if(x>y){
   while (x>=y){
@@ -50,6 +72,13 @@ bool is_pos_int(string d){
  } 
 }
 
+/*****
+ *Function:
+ *Description:
+ *Parameters: 
+ *Pre-Conditions:
+ *Post-Conditions:
+ *******/
 bool is_pos_int2(string d){
  for(int i = 0; x < d.length(); i++){
   if(!((d.at(i) >= '0' ) && (d.at(i) <= '9')))
@@ -62,6 +91,14 @@ bool is_pos_int2(string d){
   }
  } 
 }
+
+/*****
+ *Function:
+ *Description:
+ *Parameters: 
+ *Pre-Conditions:
+ *Post-Conditions:
+ *******/
 void input(){
   int pos = false;
   do{
@@ -87,7 +124,4 @@ void input(){
    cout << "Do you want to run again yes or no: " << endl;
    cin >> answer;
    }while(answer == "yes" || answer == "Yes");
-    
-
-
   return 0;}
