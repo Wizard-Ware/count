@@ -37,14 +37,14 @@ void fun2(){
   cout << "" << endl;
 }
 
-/*****
- *Function:
+/*****************************************************************************************
+ *Function: fun3
  *Description: First checks what is greater x or y then either counts down from x to y 
  * or count up from y to x
  *Parameters: none
  *Pre-Conditions: fun1() and fun2() have already run and the numbers are all positive.
- *Post-Conditions: 
- *******/
+ *Post-Conditions: numbers are printed and the function should exit then closing program.
+ ****************************************************************************************/
 void fun3(){
   if(x>y){
   while (x>=y){
@@ -61,13 +61,14 @@ void fun3(){
   cout << endl;
 } //14 lines 10 not spaced out
 
-/*****
- *Function:
- *Description:
- *Parameters: 
- *Pre-Conditions:
- *Post-Conditions:
- *******/
+/***********************************************************************************************************
+ *Function: is_pos_int
+ *Description: takes in a string and checks to see if it is a positive integer and converts it 
+ * to a type int
+ *Parameters: a string
+ *Pre-Conditions: this function is called from input() and the user has entered a string
+ *Post-Conditions: the string entered by the user is converted into a int type and returns the value true
+ ***********************************************************************************************************/
 bool is_pos_int(string d){
  for(int i = 0; x < d.length(); i++){
   if(!((d.at(i) >= '0' ) && (d.at(i) <= '9')))
@@ -81,13 +82,13 @@ bool is_pos_int(string d){
  } 
 }
 
-/*****
- *Function:
- *Description:
- *Parameters: 
- *Pre-Conditions:
- *Post-Conditions:
- *******/
+/**********************************************************************************************************************
+ *Function: is_pos_int2
+ *Description: checks to see if the inputed from user is a number and converts it into a type int
+ *Parameters: a string
+ *Pre-Conditions: this function called from input() 
+ *Post-Conditions: this function rerturns two if the input is in fact a number digyx is also converted into a integer
+ **********************************************************************************************************************/
 bool is_pos_int2(string d){
  for(int i = 0; x < d.length(); i++){
   if(!((d.at(i) >= '0' ) && (d.at(i) <= '9')))
